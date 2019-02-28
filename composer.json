@@ -1,0 +1,26 @@
+{
+    "name": "mesavolt/env",
+    "description": "Static helper to get environment variables in a Symfony 4+ app, loaded either from .env or .env.local.php",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mesavolt\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mesavolt\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "php-coveralls/php-coveralls": "^2.0",
+        "phpunit/phpunit": "^7"
+    }
+}
