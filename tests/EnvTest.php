@@ -35,9 +35,27 @@ class EnvTest extends TestCase
 
         $this->assertEquals('test4', Env::get('ENV_VAR_4'));
         $this->assertEquals('test5', Env::get('ENV_VAR_5'));
+    }
 
+    public function testGetThrowsExceptionOnUndefined()
+    {
+        putenv("ENV_VAR_6=");
+        $this->expectException(\RuntimeException::class);
+        $this->expectExceptionMessage("Env var ENV_VAR_6 is empty");
+        Env::get('ENV_VAR_6');
+    }
+
+    public function testGetThrowsExceptionOnEmpty()
+    {
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage("Env var UNDEFINED_ENV_VAR is not defined");
         Env::get('UNDEFINED_ENV_VAR');
+    }
+
+    public function testGetSageThrowsExceptionOnEmpty()
+    {
+        $this->expectException(\RuntimeException::class);
+        $this->expectExceptionMessage("Env var UNDEFINED_ENV_VAR is not defined");
+        Env::getSafe('UNDEFINED_ENV_VAR');
     }
 }
