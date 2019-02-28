@@ -1,8 +1,8 @@
 # Environment helper for Symfony 4+
 
 [![Latest Stable Version](https://poser.pugx.org/mesavolt/env/v/stable)](https://packagist.org/packages/mesavolt/env)
-[![Build Status](https://travis-ci.org/MesaVolt/env.svg)](https://travis-ci.org/MesaVolt/env)
-[![Coverage Status](https://coveralls.io/repos/github/MesaVolt/env/badge.svg)](https://coveralls.io/github/MesaVolt/env)
+[![Build Status](https://travis-ci.com/MesaVolt/env.svg)](https://travis-ci.com/MesaVolt/env)
+[![Coverage Status](https://codecov.io/gh/MesaVolt/env/branch/master/graph/badge.svg)](https://codecov.io/gh/MesaVolt/env)
 [![License](https://poser.pugx.org/mesavolt/env/license)](https://packagist.org/packages/mesavolt/env)
 
 ## Usage
